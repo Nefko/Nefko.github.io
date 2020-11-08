@@ -43,7 +43,7 @@ $(window).scroll(function () {
         var imageHeight = $(this).height();
         var topOfWindow = $(window).scrollTop();
 
-        if (imagePos < topOfWindow + imageHeight*0.8 ) {
+        if (imagePos < topOfWindow + imageHeight*1.15 ) {
             $(this).addClass("vrti");
 
         } else {
