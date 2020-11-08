@@ -1,9 +1,9 @@
 $(window).scroll(function () {
 
     $('.animacija-prva').each(function () {
-        var imagePos = $(this).offset().top;
-        var imageHeight = $(this).height();
-        var topOfWindow = $(window).scrollTop();
+        var imagePos = $(this).offset().top; //udaljenost slike i vrha stranice
+        var imageHeight = $(this).height(); //visina slike
+        var topOfWindow = $(window).scrollTop();  //uadljenost vrha stranica i najgornjeg vidljivog pixela
 
         if (imagePos < topOfWindow + imageHeight*1 ) {
             $(this).addClass("slideRight");
